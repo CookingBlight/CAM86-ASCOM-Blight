@@ -1,26 +1,20 @@
 # cam86 ASCOM driver
-Custom ASCOM driver for CAM86 DIY camera (Sony ICX453AQ sensor).
+Custom ASCOM driver for CAM86 DIY camera (Sony ICX453AQ sensor). Only confirmed to be compatible with custom low level driver written in C++.
+
+Because the ASCOM driver doesn't work with the other firmware and low level driver found elsewhere I have created a new repo instead of a fork.
 
 This project is based on work of Ukrainian telescope amateurs.
 Most of their work is shared on this huge [forum thread](http://www.astroclub.kiev.ua/forum/index.php?topic=28929.0).
 
 The current work is described [here](http://www.iceinspace.com.au/forum/showthread.php?t=146493).
 
-
-**Download** the executable version of the driver [here](https://github.com/axsdenied/cam86_ASCOM/blob/master/cam86_setup.exe).
-
-**Download** the firmware [here](https://github.com/axsdenied/cam86_fw/blob/master/Exe/cam86.hex).
-
-
-The source code for the camera firmware can be found [here](https://github.com/axsdenied/cam86_fw) while the low level DLL can be found [here](https://github.com/axsdenied/cam86_dll).
+The source code for the camera firmware can be found [here](https://github.com/CookingBlight/CAM86-FW-Blight) while the low level DLL can be found [here](https://github.com/CookingBlight/CAM86-DLL-Blight).
 
 
 # See also
 [Information in Ukrainian](http://astroccd.org/)
 
 [French forum](http://www.webastro.net/forum/showthread.php?t=141764)
-
-[Original Indi driver for Cam86](https://github.com/gehelem/indi_cam86_ccd)
 
 [Cam84/Cam86 forum](http://www.cloudynights.com/topic/497530-diy-astro-ccd-16-bit-color-6mpx-camera/)
 
@@ -34,5 +28,7 @@ Their code is shared on [Sergiy Vakulenko 's Github](https://github.com/vakulenk
 
 
 Luka Pravica - current modifications/extensions/customisations to the firmware, low-level driver and ASCOM driver
+
+Tommy Ramberg - Modified driver to be compatible with low level driver written in C++.
 
 All derived work from this code must be kept free and opensource as governed by GPL v2 or later (see the included file COPYING).
